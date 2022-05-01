@@ -5,18 +5,20 @@ namespace MyEshop.Models
 {
     public class Product
     {
-        public Product()
-        {
-            Categories=new List<Category>();
-        }
+        //public Product()
+        //{
+        //    Categories=new List<Category>();
+        //}
         public int Id { get; set; }
         public string Name { get; set; }
         
         public string Description { get; set; }
-        
-        public List<Category>  Categories { get; set; }
-        
-        
-        
+
+        public int ItemId { get; set; }
+
+        //Navigation.....
+        public ICollection<CategoryToProduct> CategoryToProducts { get; set; }
+        public Item item { get; set; }
+
     }
 }

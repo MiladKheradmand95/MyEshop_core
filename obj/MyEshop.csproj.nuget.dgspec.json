@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\project\\AspNetCore\\MyEshop\\MyEshop.csproj": {}
+    "D:\\Pro\\ASP.Core\\MyEshop\\MyEshop_core\\MyEshop.csproj": {}
   },
   "projects": {
-    "D:\\project\\AspNetCore\\MyEshop\\MyEshop.csproj": {
+    "D:\\Pro\\ASP.Core\\MyEshop\\MyEshop_core\\MyEshop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\project\\AspNetCore\\MyEshop\\MyEshop.csproj",
+        "projectUniqueName": "D:\\Pro\\ASP.Core\\MyEshop\\MyEshop_core\\MyEshop.csproj",
         "projectName": "MyEshop",
-        "projectPath": "D:\\project\\AspNetCore\\MyEshop\\MyEshop.csproj",
-        "packagesPath": "C:\\Users\\Milad\\.nuget\\packages\\",
-        "outputPath": "D:\\project\\AspNetCore\\MyEshop\\obj\\",
+        "projectPath": "D:\\Pro\\ASP.Core\\MyEshop\\MyEshop_core\\MyEshop.csproj",
+        "packagesPath": "C:\\Users\\m.kheradmand\\.nuget\\packages\\",
+        "outputPath": "D:\\Pro\\ASP.Core\\MyEshop\\MyEshop_core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Milad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\m.kheradmand\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -60,6 +57,12 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
             }
           },
           "imports": [
@@ -80,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
