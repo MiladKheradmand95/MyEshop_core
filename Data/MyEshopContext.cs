@@ -18,7 +18,8 @@ namespace MyEshop.Data
         {
             modelBuilder.Entity<CategoryToProduct>().HasKey(t => new
             {
-                t.ProductId,t.CategoryId
+                t.ProductId,
+                t.CategoryId
             });
             #region SeedDate Category
 
