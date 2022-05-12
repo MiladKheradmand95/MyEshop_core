@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query;
 using Microsoft.Extensions.Logging;
 using MyEshop.Data;
 using MyEshop.Models;
@@ -15,7 +16,7 @@ namespace MyEshop.Controllers
     {
         private readonly ILogger<HomeController> _logger; 
         private MyEshopContext _context;
-
+        private static Cart _cart = new Cart();
         public HomeController(ILogger<HomeController> logger,MyEshopContext context)
         {
             _logger = logger;
@@ -58,7 +59,34 @@ namespace MyEshop.Controllers
 
         public IActionResult AddToCart(int ItemId)
         {
-          return  null;
+            var product = _context.Products.Include(p=>p.item).SingleOrDefault(p => p.ItemId == ItemId);
+            if (product!=null)
+            {
+                var cartItem = new CartItem()
+                {
+                    Item = product.item,
+                    Quantity = 1
+                };
+                _cart.addItem(cartItem);
+            }
+
+            return RedirectToAction("ShowCart");
+        }
+
+        public IActionResult ShowCart()
+        {
+            var CartVM = new CartViewModel()
+            {
+                Cartitem = _cart.CartItem,
+                OrderTotal = _cart.CartItem.Sum(c=>c.getTotalPrice())
+            };
+            return View(CartVM);
+        }
+
+        public IActionResult RemoveFromCart(int itemId)
+        {
+            _cart.removeItem(itemId);
+            return RedirectToAction("ShowCart");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

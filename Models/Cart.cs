@@ -16,9 +16,9 @@ namespace MyEshop.Models
 
         public void addItem(CartItem item)
         {
-            if (CartItem.Exists(i => i.Item.Id == item.Id))
+            if (CartItem.Exists(i => i.Item.Id == item.Item.Id))
             {
-                CartItem.Find(i=>i.Item.Id==item.Id).Quantity+=1;
+                CartItem.Find(i=>i.Item.Id==item.Item.Id).Quantity+=1;
             }
             else
             {
@@ -27,7 +27,7 @@ namespace MyEshop.Models
         }
         public void removeItem(int itemId)
         {
-            var item=CartItem.SingleOrDefault(i=>i.Id==itemId);
+            var item=CartItem.SingleOrDefault(i=>i.Item.Id==itemId);
             if (item?.Quantity<=1)
             {
                 CartItem.Remove(item);

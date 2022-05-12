@@ -83,7 +83,6 @@ D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\MyEshop.TagHelpers.input.c
 D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\MyEshop.TagHelpers.output.cache
 D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\MyEshop.RazorCoreGenerate.cache
 D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\Razor\Views\Home\ContactUs.cshtml.g.cs
-D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -174,3 +173,8 @@ D:\Pro\ASP.Core\MyEshop\MyEshop_core\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnal
 D:\Pro\ASP.Core\MyEshop\MyEshop_core\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 D:\Pro\ASP.Core\MyEshop\MyEshop_core\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\Razor\Views\Home\Detail.cshtml.g.cs
+D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\Razor\Views\Home\ShowCart.cshtml.g.cs
+D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\Razor\Views\Components\ProductGroupsComponents.cshtml.g.cs
+D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\Razor\Views\Product\ShowProductByGroupId.cshtml.g.cs
+D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\Razor\Views\Shared\_BoxProduct.cshtml.g.cs

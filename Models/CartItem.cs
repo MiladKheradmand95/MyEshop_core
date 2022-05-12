@@ -11,7 +11,7 @@ namespace  MyEshop.Models
         
         public decimal getTotalPrice()
         {
-            return Item.Price=Quantity;
+            return Item.Price*Quantity;
         }
     }
 }
