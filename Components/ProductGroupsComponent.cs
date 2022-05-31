@@ -2,28 +2,24 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MyEshop.Data;
+using MyEshop.Data.Repositories;
 using MyEshop.Models;
 
 namespace MyEshop.Components
 {
     public class ProductGroupsComponent:ViewComponent
     {
-        private MyEshopContext _context;
-        public ProductGroupsComponent(MyEshopContext context)
+        private IGroupRepository _groupRepository;
+
+        public ProductGroupsComponent(IGroupRepository groupRepository)
         {
-            this._context=context;
+            _groupRepository = groupRepository;
         }
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var categories = _context.Categories
-                .Select(c => new ShowGroupViewModel()
-                {
-                    GroupId = c.Id,
-                    GroupName = c.Name,
-                    ProductCount = _context.CategoryToProduct.Count(g => g.CategoryId == c.Id)
-                }).ToList();
-            return View("/Views/Components/ProductGroupsComponents.cshtml", categories);
+            
+            return  View("/Views/Components/ProductGroupsComponents.cshtml", _groupRepository.GetGroupForShow());
         }
     }
 }

@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyEshop.Data;
+using MyEshop.Data.Repositories;
 
 namespace MyEshop
 {
@@ -36,6 +37,11 @@ namespace MyEshop
 
             #endregion
 
+            #region Ioc
+
+            services.AddScoped<IGroupRepository, GroupRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            #endregion
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

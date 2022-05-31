@@ -14,6 +14,7 @@ namespace MyEshop.Data
         public DbSet<CategoryToProduct> CategoryToProduct { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Item> Item { get; set; }
+        public DbSet<Users> Users { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<CategoryToProduct>().HasKey(t => new

@@ -178,3 +178,7 @@ D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\Razor\Views\Components\Pro
 D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\Razor\Views\Product\ShowProductByGroupId.cshtml.g.cs
 D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\Razor\Views\Shared\_BoxProduct.cshtml.g.cs
+D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\Razor\Views\Shared\_Groups.cshtml.g.cs
+D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\Razor\Views\Account\SuccessRegister.cshtml.g.cs
+D:\Pro\ASP.Core\MyEshop\MyEshop_core\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
