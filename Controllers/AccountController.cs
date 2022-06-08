@@ -57,11 +57,28 @@ namespace MyEshop.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(LoginViewModel loginViewModel)
+        public IActionResult Login(LoginViewModel login)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(login);
+            }
+            var user=_userRepository.GetUserForLogin(login.Email.ToLower(),login.Password);
+            if (user == null)
+            {
+                ModelState.AddModelError("Email", "کاربری با این نام کاربری کلمه عبور پیدا نشد");
+                return View(login);
+            }
+
             return View();
         }
 
+        public IActionResult LogOut()
+        {
+
+            return Redirect("/Account/Login");
+        }
         #endregion
+
     }
 }
